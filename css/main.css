@@ -1,3 +1,24 @@
-* {
-  font-family: "Inter", sans-serif;
+/* Header */
+
+#logo {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: black;
+}
+
+/* Main */
+
+.product-img {
+  width: 50%;
 }
