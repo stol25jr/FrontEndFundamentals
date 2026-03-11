@@ -2,19 +2,29 @@
 
 #logo {
   font-family: "Play", sans-serif;
-  font-weight: 400;
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
 }
 
+header {
+  display: flex;
+  align-items: center;
+}
+
 ul {
+  display: flex;
   list-style: none;
   padding-left: 0;
 }
 
+li {
+  margin-left: 4rem;
+}
+
 a {
   color: black;
+  list-style: none;
 }
 
 /* Main */
@@ -24,3 +34,12 @@ a {
 }
 
 /* Products page */
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.products-image {
+  width: 80%;
+}
