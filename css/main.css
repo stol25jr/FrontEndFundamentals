@@ -2,34 +2,54 @@
 
 #logo {
   font-family: "Play", sans-serif;
-  font-style: normal;
+  color: dodgerblue;
+  font-style: italic;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 80px;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
+  font-size: 20px;
+}
+
+#logo {
+  margin-top: 60px;
+  margin-left: 60px;
 }
 
 header {
   display: flex;
   align-items: center;
+  background-color: lightgrey;
 }
 
 ul {
   display: flex;
   list-style: none;
-  padding-left: 0;
+  padding-left: 20px;
 }
 
 li {
-  margin-left: 4rem;
+  margin-left: 6rem;
 }
 
 a {
   color: black;
-  list-style: none;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 700px) {
+a:hover {
+  color: dodgerblue;
+}
+
+@media screen and (max-width: 1145px) {
   header,
-  ul {
+  ul,
+  #logo {
     flex-direction: column;
     align-items: start;
     margin-left: 0;
@@ -47,27 +67,47 @@ a {
 
 /* Main */
 
-.homepage-image {
-  width: 50%;
+#homepage-image {
+  width: 30%;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 28px;
+  margin-left: 20px;
 }
 
 /* Products page */
 
-#top-seller-black {
-  width: 110%;
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-#top-seller-white {
-  width: 80%;
+figcaption {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 14px;
+}
+
+figcaption {
+  text-decoration: underline;
 }
 
 .products-image {
-  width: 80%;
+  width: 70%;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 1145px) {
   .products-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .products-container {
+    grid-template-columns: 1fr;
   }
 }
